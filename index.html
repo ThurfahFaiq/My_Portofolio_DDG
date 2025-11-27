@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Thurfah</title>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Font Google (Bubblegum Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font Google (Jaro Sans) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- File CSS Eksternal -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-group">
+            <div class="profil"><img src="asset/user.png" alt="profil" class="=profil"> </div>
+            <div class="logo"><a href="#">Thurfah</a></div>
+            <div class="logo2"><a href="#">Faiq</a></div>
+
+        </div>
+
+        <div class="navbar-icon">
+            <input type="text" placeholder="Search" />
+            <i data-feather="search"></i>
+        </div>
+
+        <div class="navbar-item">
+            <a href="#">Home</a>
+            <a href="#skills">My Skill</a>
+            <a href="#contact-me">Contact</a>
+        </div>
+    </nav>
+
+    <main class="judul-utama">
+        <div class="judul-box">
+            <h1>PORTOFOLIO</h1>
+            <p>Web Development</p>
+            <a href="#" class="tombol-getstarted">Get Started</a>
+        </div>
+    </main>
+    <!-- ===== My Skill Section ===== -->
+    <section id="skills" class="skills-section">
+        <h2 class="skills-title">My Skill</h2>
+
+        <div class="skill-container">
+
+            <div class="skill-box">
+                <div class="logo-skill">
+                    <img src="asset/figma.png" alt="gambarfigma">
+                </div>
+                <a href="https://www.figma.com/">Figma</a>
+                <p>UI/UX Design Tool</p>
+            </div>
+
+            <div class="skill-box">
+                <div class="logo-skill">
+                    <img src="asset/illustrator.png" alt="gambaradobe">
+                </div>
+                <a href="#">Adobe Illustrator</a>
+                <p>graphic design tool</p>
+            </div>
+
+            <div class="skill-box">
+                <div class="logo-skill">
+                    <img src="asset/java.png" alt="gambarjava">
+                </div>
+                <a href="#">Java Script</a>
+                <p>Programming languange</p>
+            </div>
+
+            <div class="skill-box">
+                <div class="logo-skill">
+                    <img src="asset/typescript.png" alt="gambartypescript">
+                </div>
+                <a href="#">Type Script</a>
+                <p>Typed Superset of JavaScript</p>
+            </div>
+
+            <div class="skill-box">
+                <div class="logo-skill">
+                    <img src="asset/mcgg.webp" alt="gambarmcgg">
+                </div>
+                <a href="#">Magic chest go go</a>
+                <p>Game orang ganteng</p>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- ===== end My Skill Section ===== -->
+
+    <!-- ===== My Project Section ===== -->
+
+    <section id="projects" class="projects-section">
+        <h2 class="projects-title">My Project</h2>
+
+        <div class="project-container">
+
+            <div class="project-box">
+                <div class="project-thumb">
+                    <img src="asset/projek1.png" alt="Project 1 screenshot">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                <h3 class="project-title">Project 1 — Adobe Ilustrator</h3>
+                
+            </div>
+            <div class="project-box">
+                <div class="project-thumb">
+                    <img src="asset/projek2.jpg" alt="Project 2 screenshot">
+                    <div class="project-overlay">
+                    </div>
+                </div>
+                <h3 class="project-title">Project 2 — Adobe Ilustrator</h3>  
+            </div>
+
+        </div>
+    </section>
+    <!-- ===== end My Project Section ===== -->
+
+    <!-- ===== Contact Me Section ===== -->
+    <section id="contact-me" class="contact-me-section">
+        <h2 class="contact-me-title">Contact Me</h2>
+
+        <div class="contact-me-container">
+
+            <div class="contact-me-box">
+                <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xldygqoy"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
+        </div>
+    </section>
+    
+    <!-- ===== end Contact Me Section ===== -->
+    <!-- Aktifkan Feather Icons -->
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

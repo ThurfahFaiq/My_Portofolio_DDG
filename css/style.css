@@ -1,0 +1,531 @@
+:root {
+  --utama: #2b8c799e;
+  --kedua: rgba(26, 112, 161, 0.7);
+  --background: #4FB7B3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR UTAMA */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 25%;
+  background-color: var(--background);
+  color: var(--kedua);
+  position: relative;
+  top: 0;
+  z-index: 100;
+  
+  
+}
+.navbar .profil img {
+  width: 40px;   
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;  
+   
+}
+.navbar .profil img:hover {
+ 
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(43, 140, 121, 0.5);
+}
+.navbar {
+  padding: 1.4rem 10%;
+}
+
+
+/* LOGO */
+.navbar .logo a {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #004d40;
+  padding: 10px 1px 10px 10px;
+  border-radius: 10px;
+  text-shadow:
+    0 0 10px rgba(43, 140, 121, 0.5),
+    0 0 20px rgba(43, 140, 121, 0.3);
+  
+}
+
+.navbar .logo2 a {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #e0f7fa;
+  padding: 10px;
+  border-radius: 10px;
+  text-shadow:
+    0 0 10px rgba(43, 140, 121, 0.5),
+    0 0 20px rgba(43, 140, 121, 0.3);
+}
+
+
+.navbar .logo a span {
+  color: var(--utama);
+}
+
+/* Jarak antar logo */
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+
+
+/* MENU NAVBAR (Home, About, Dll) */
+.navbar-item a {
+  
+  color: #ffffff;
+  margin-left: 20px;
+  padding: 10px;
+  box-shadow: 0 0 35px rgba(43, 140, 121, 0.5);
+  border-radius: 10px;
+}
+
+.navbar-item a:hover {
+
+ background-color: #65d9d5;
+  transform: scale(1.03);
+  
+}
+
+/* SEARCH BAR */
+.navbar-icon {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px 15px;
+  box-shadow: 0 2px 6px rgba(139, 58, 121, 0.3);
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.navbar-icon:hover {
+  box-shadow: 0 4px 10px rgba(216, 0, 187, 0.3);
+  transform: scale(1.05);
+  padding: 5px 35px;
+}
+
+/* Input teks di dalam search bar */
+.navbar-icon input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 25px;
+  width: 130px;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  color: #333;
+  background: transparent;
+  transition: width 0.4s ease;
+}
+
+.navbar-icon input[type="text"]:focus {
+  width: 200px;
+}
+
+.navbar-icon input[type="text"]::placeholder {
+  color: #a871a1;
+}
+
+/* Ikon pencarian */
+.navbar-icon i {
+  color: #221721;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-icon i:hover {
+  color: #100e0f;
+  transform: scale(1.2);
+}
+
+h1 {
+  font-family: "Jaro", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 3px #2b8c79;
+  text-shadow:
+    0 0 10px rgba(43, 140, 121, 0.6),
+    0 0 20px rgba(43, 140, 121, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.judul-utama {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  height: 90vh;
+  background: linear-gradient(180deg, #97d7b8 0%, #4fb7b3 100%);
+  padding-top: 100px; 
+}
+
+.judul-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 3px solid #2b8c79;
+  border-radius: 20px;
+  padding: 40px 80px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(43, 140, 121, 0.3);
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease;
+}
+
+.judul-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(43, 140, 121, 0.5);
+}
+
+.judul-box h1 {
+  font-family: "Jaro", sans-serif;
+  margin-top: -20px; 
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: none;
+  letter-spacing: 20px;
+  -webkit-text-stroke: 3px #2b8c79;
+  margin-bottom: 10px;
+  text-shadow:
+    0 0 10px rgba(43, 140, 121, 0.5),
+    0 0 20px rgba(43, 140, 121, 0.3);
+}
+
+.judul-box p {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  color: #e0f7fa;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.tombol-getstarted {
+  display: inline-block;
+  padding: 12px 35px;
+  background-color: #2b8c79;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(43, 140, 121, 0.3);
+}
+
+.tombol-getstarted:hover {
+  background-color: #65d9d5;
+  color: #004d40;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(43, 140, 121, 0.5);
+}
+/* ===== My Skill Section ===== */
+.skills-section {
+  padding: 60px 6%;
+  background: transparent; /* biar nyambung dengan background halaman */
+   padding: 60px 6%;
+  background: linear-gradient(180deg, #4fb7b3 0%, #2b8c79 100%); 
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  font-family: "Jaro", sans-serif;
+  font-size: 36px;
+  color: #004d40;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px rgba(43,140,121,0.15);
+  text-align: center;
+}
+
+.skill-box{
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid #2b8c79;
+  border-radius: 16px;
+  width: 220px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(43, 140, 121, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 40px;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(43, 140, 121, 0.5);
+  
+}
+.logo-skill img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.skill-box a {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  
+}
+.skill-box p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #e0f7fa;
+  opacity: 0.9;
+}
+.skills-section {
+  padding: 10px 0;
+  background: linear-gradient(180deg, #4fb7b3 0%, #2b8c79 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+
+
+/* ===== My Project Section ===== */
+.projects-section {
+  padding: 10px 0;
+  background: linear-gradient(180deg, #2b8c79 0%, #1a5a52 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-title {
+  font-family: "Jaro", sans-serif;
+  font-size: 36px;
+  color: #e0f7fa;
+  margin-bottom: 100px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px rgba(224, 247, 250, 0.15);
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.project-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  width: 250px;
+  height: 300px;
+  padding: 18px;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+}
+
+.logo-project img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.project-thumb {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.project-thumb img {
+  width: 200px;
+  height: 200px; 
+  object-fit: contain; 
+  display: block;
+  background: #111;
+}
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.project-btn {
+  background: #2b8c79;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(43,140,121,0.25);
+}
+.project-btn:hover {
+  background: #1f6d59;
+}
+
+.project-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin: 12px 0 6px 0;
+  color: #ffffff;
+}
+.project-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #cfeeea;
+  margin-bottom: 10px;
+}
+.project-tags span {
+  display: inline-block;
+  background: rgba(255,255,255,0.06);
+  color: #e0f7fa;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+/* ===== Contact Me Section ===== */
+.contact-me-section {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #1a5a52 0%, #0d3a35 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-me-title {
+  font-family: "Jaro", sans-serif;
+  font-size: 36px;
+  color: #65d9d5;
+  margin-bottom: 100px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px rgba(101, 217, 213, 0.15);
+  text-align: center;
+}
+
+.contact-me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.contact-me-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #65d9d5;
+  border-radius: 16px;
+  width: 500px;
+  height: 200px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(101, 217, 213, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 40px;
+}
+
+.contact-me-box label {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #2b8c79;
+  letter-spacing: 2x;
+  margin-bottom: 20px;
+  display: block;
+}
+.contact-me-box button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #2b8c79;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(43,140,121,0.25);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding-top: 10px;
+}
+.contact-me-box button:hover {
+  background-color: #1f6d59;
+  transform: scale(1.05);
+}
+
+/* ===== responsive ===== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-item a {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+
+  .judul-box {
+    padding: 30px 20px;
+  }
+
+  .judul-box h1 {
+    font-size: 28px;
+  }
+
+  .skills-section, .projects-section {
+    padding: 60px 0;
+  }
+  
+}
