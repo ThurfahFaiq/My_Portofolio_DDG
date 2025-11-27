@@ -511,22 +511,21 @@ h1 {
   }
   .navbar-icon {
     margin-top: -10px;
-    margin-left: 100px;
+    margin-left: 90px;
   }
   .navbar-item a {
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-    margin-left: 50px;
+    margin: center;
+    margin-left: 38px;
   }
  
-
   .judul-box {
     padding: 30px 20px;
   }
 
   .judul-box h1 {
     font-size: 40px;
+    letter-spacing: 10px;
     -webkit-text-stroke: 1px #2b8c79;
   }
 
@@ -536,5 +535,10 @@ h1 {
   .contact-me-box {
     width: 90%;
     height: auto;
+    flex-wrap:wrap;
+
+  }
+  .contact-me-box label {
+    padding: 10px;
   }
 }
