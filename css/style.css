@@ -500,6 +500,57 @@ h1 {
   background-color: #1f6d59;
   transform: scale(1.05);
 }
+/* Footer */
+.site-footer {
+  background: linear-gradient(180deg,#173f39 0%, #0d2b28 100%);
+  color: #e0f7fa;
+  padding: 20px 0;
+  box-shadow: 0 -4px 18px rgba(0,0,0,0.35);
+}
+.site-footer .footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.footer-nama {
+  font-family: "Poppins", sans-serif;
+  color: #bfeee8;
+}
+.media-social a {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  transition: transform 0.18s ease, background 0.18s ease;
+  text-decoration: none;
+}
+.media-social a:hover {
+  transform: translateY(-4px);
+  background: #ffffff;
+}
+.media-social a svg {
+  width: 20px;
+  height: 20px;
+  fill: #e0f7fa;
+  transition: fill 0.18s ease;
+}
+.media-social a img {
+  width: 20px;
+  height: 20px;
+  fill: #e0f7fa;
+  transition: fill 0.18s ease;
+}
+.media-social a:hover svg {
+  fill: #004d40;
+}
 
 /* ===== responsive ===== */
 @media (max-width: 767px) {
